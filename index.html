@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miracle Care Inc - Specialized Healthcare Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-container">
+        <div class="logo-section" onclick="navigateTo('home')">
+          <div class="logo" role="img" aria-label="Miracle Care Inc Logo"></div>
+          <div class="brand-info">
+            <h1>Miracle Care Inc</h1>
+            <p>Specialized Healthcare Services</p>
+          </div>
+        </div>
+        <button
+          class="mobile-menu-btn"
+          aria-label="Toggle menu"
+          onclick="toggleMenu()"
+        >
+          ☰
+        </button>
+        <nav id="nav">
+          <a onclick="navigateTo('home')" class="nav-link active">Home</a>
+          <a onclick="navigateTo('about')" class="nav-link">About Us</a>
+          <a onclick="navigateTo('services')" class="nav-link">Services</a>
+          <a onclick="navigateTo('contact')" class="nav-link">Contact</a>
+          <a href="tel:6158397690" class="call-now-btn">
+            <span>📞</span> Call Now
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page active">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h2>
+            Provide Enrichment of Patient Lives through
+            <span class="highlight">Specialized Care</span>, Dignity and
+            Acceptance!
+          </h2>
+          <p>
+            Compassionate healthcare services for individuals with intellectual
+            and physical disabilities across Middle Tennessee
+          </p>
+          <div class="hero-buttons">
+            <a href="tel:6158397690" class="btn-primary">
+              <span>📞</span> Call Now: (615) 839-7690
+            </a>
+            <span onclick="navigateTo('about')" class="btn-secondary">
+              <span>❤️</span> Learn About Us
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Preview -->
+      <section class="section gray">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Core Services</h2>
+            <p>
+              Comprehensive support services designed to enhance independence
+              and quality of life
+            </p>
+          </div>
+          <div class="services-preview">
+            <div class="service-card">
+              <div class="service-icon blue">
+                <span>👥</span>
+              </div>
+              <h3>Community Support</h3>
+              <p>
+                Community participation and integration services to help
+                individuals engage meaningfully in their communities.
+              </p>
+              <a onclick="navigateTo('services')" class="service-link"
+                >Click to learn more</a
+              >
+            </div>
+            <div class="service-card">
+              <div class="service-icon green">
+                <span>🏠</span>
+              </div>
+              <h3>Residential Support</h3>
+              <p>
+                Family model residential and supported living services providing
+                safe, nurturing environments.
+              </p>
+              <a onclick="navigateTo('services')" class="service-link green"
+                >Click to learn more</a
+              >
+            </div>
+            <div class="service-card">
+              <div class="service-icon orange">
+                <span>🤝</span>
+              </div>
+              <h3>Personal Care</h3>
+              <p>
+                Personal assistance and respite services tailored to individual
+                needs and preferences.
+              </p>
+              <a onclick="navigateTo('services')" class="service-link orange"
+                >Click to learn more</a
+              >
+            </div>
+          </div>
+          <a onclick="navigateTo('services')" class="view-all-btn"
+            >View All Services</a
+          >
+        </div>
+      </section>
+
+      <!-- Counties Section -->
+      <section class="section white">
+        <div class="container">
+          <div class="section-header">
+            <h2>Serving Middle Tennessee</h2>
+          </div>
+          <div class="counties-grid">
+            <div class="county-card">
+              <h3>Davidson County</h3>
+              <p>Nashville and surrounding areas</p>
+            </div>
+            <div class="county-card">
+              <h3>Rutherford County</h3>
+              <p>Murfreesboro and surrounding areas</p>
+            </div>
+            <div class="county-card">
+              <h3>Williamson County</h3>
+              <p>Brentwood, Franklin and surrounding areas</p>
+            </div>
+            <div class="county-card">
+              <h3>Wilson County</h3>
+              <p>Lebanon and surrounding areas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about-page" class="page">
+      <section class="section white">
+        <div class="container">
+          <div class="about-content">
+            <h2>About Miracle Care Inc</h2>
+
+            <!-- Added image for About section. Place the image file `miracle-care-caregiver.webp` in the project root or update the src path as needed. -->
+            <figure>
+              <img
+                src="doctors-nurses.png"
+                alt="Care team"
+                class="about-image"
+              />
+            </figure>
+            <p>
+              Miracle Care Inc is an agency dedicated to serving the people of
+              our community with compassion, dignity, and love. We are committed
+              to making a meaningful difference in the lives of those we serve.
+            </p>
+            <p>
+              We provide quality healthcare to improve the lives of individuals
+              with intellectual and physical disabilities, regardless of income
+              and social status. Our team of dedicated professionals works
+              tirelessly to ensure that every person receives the care, respect,
+              and support they deserve.
+            </p>
+            <p>
+              Under the leadership of our CEO/Executive Director, Vivian Ezirim,
+              we strive to create miracles every day by enriching the lives of
+              our patients through specialized care and unwavering acceptance.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h3>Our Mission</h3>
+              <ul>
+                <li>Serve our community with compassion and dignity</li>
+                <li>Provide quality healthcare services</li>
+                <li>Improve lives of individuals with disabilities</li>
+                <li>Ensure care regardless of income or status</li>
+              </ul>
+            </div>
+            <div class="about-card">
+              <h3>Our Values</h3>
+              <ul>
+                <li>Compassion in every interaction</li>
+                <li>Dignity and respect for all</li>
+                <li>Love and acceptance without judgment</li>
+                <li>Quality care as our standard</li>
+              </ul>
+            </div>
+            <div class="about-card">
+              <h3>Leadership</h3>
+              <p style="color: #4b5563; line-height: 1.8">
+                <strong>Vivian Ezirim</strong><br />
+                CEO/Executive Director<br /><br />
+                Leading Miracle Care Inc with dedication and vision to transform
+                healthcare delivery for individuals with intellectual and
+                physical disabilities across Middle Tennessee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services-page" class="page">
+      <section class="section gray">
+        <div class="container">
+          <div class="section-header">
+            <h2>Our Services</h2>
+            <p>
+              Comprehensive support services designed to enhance independence
+              and quality of life
+            </p>
+          </div>
+          <div class="services-list">
+            <div class="service-item">
+              <h3>
+                <span class="icon">👥</span> Community Participation Supports
+              </h3>
+              <p>
+                Programs and services that help individuals engage meaningfully
+                in their communities, fostering social connections and personal
+                growth.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>
+                <span class="icon">💼</span> Intermittent Employment & Community
+                Integration
+              </h3>
+              <p>
+                Support services that assist individuals in finding and
+                maintaining employment while integrating successfully into their
+                communities.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3><span class="icon">🤝</span> Wrap-Around Supports</h3>
+              <p>
+                Comprehensive, coordinated services that address all aspects of
+                an individual's needs, providing holistic care and support.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>
+                <span class="icon">🏡</span> Family Model Residential Support
+              </h3>
+              <p>
+                Safe, nurturing home environments that provide family-style
+                living arrangements with professional care and support.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>
+                <span class="icon">🚗</span> Individual Transportation Services
+              </h3>
+              <p>
+                Reliable transportation services to help individuals access
+                healthcare, employment, and community activities.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>
+                <span class="icon">🏠</span> Non-Residential Homebound Supports
+                Services
+              </h3>
+              <p>
+                In-home support services for individuals who are homebound,
+                ensuring they receive quality care in the comfort of their own
+                homes.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3><span class="icon">✋</span> Personal Assistance</h3>
+              <p>
+                Personalized assistance with daily living activities, tailored
+                to each individual's unique needs and preferences.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3><span class="icon">⏰</span> Respite</h3>
+              <p>
+                Temporary relief services for primary caregivers, providing
+                professional care while allowing families time to rest and
+                recharge.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3>
+                <span class="icon">🏘️</span> Semi-Independent Living Services
+              </h3>
+              <p>
+                Support services for individuals who are capable of living
+                semi-independently, with assistance available as needed.
+              </p>
+            </div>
+            <div class="service-item">
+              <h3><span class="icon">🌟</span> Supported Living</h3>
+              <p>
+                Comprehensive living support services that promote independence
+                while ensuring safety and quality of life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact-page" class="page">
+      <section class="section gray">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>
+              We're here to answer your questions and provide the care you need
+            </p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-item-content">
+                  <h4>Phone</h4>
+                  <a href="tel:6158397690">(615) 839-7690</a>
+                  <p>Available in Central Time Zone</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-item-content">
+                  <h4>Email</h4>
+                  <a href="mailto:miraclecare23@gmail.com"
+                    >miraclecare23@gmail.com</a
+                  >
+                  <p>Response typically within 24 hours</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-item-content">
+                  <h4>Address</h4>
+                  <p>
+                    5560 Franklin Pike Circle, Suite 209<br />Brentwood, TN
+                    37027
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item leadership-item">
+                <div class="contact-icon">👤</div>
+                <div class="contact-item-content">
+                  <h4>Leadership</h4>
+                  <p>Vivian Ezirim<br />CEO/Executive Director</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">🕐</div>
+                <div class="contact-item-content">
+                  <h4>Office Hours</h4>
+                  <p>Mon-Fri: 8AM-5PM | 24/7 Emergency</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">🏥</div>
+                <div class="contact-item-content">
+                  <h4>Service Areas</h4>
+                  <p>Davidson, Rutherford, Williamson, and Wilson Counties</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo-section" style="margin-bottom: 1rem">
+              <div
+                class="logo"
+                role="img"
+                aria-label="Miracle Care Inc Logo"
+              ></div>
+              <div>
+                <h3>Miracle Care Inc</h3>
+                <p class="tagline">Specialized Healthcare Services</p>
+              </div>
+            </div>
+            <p>
+              Dedicated to serving our community with compassion, dignity, and
+              love. We provide quality healthcare to improve life for
+              individuals with intellectual and physical disabilities.
+            </p>
+            <a
+              href="tel:6158397690"
+              class="call-now-btn"
+              style="display: inline-flex; width: auto"
+            >
+              <span>📞</span> Call Now
+            </a>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a onclick="navigateTo('home')">Home</a></li>
+              <li><a onclick="navigateTo('about')">About Us</a></li>
+              <li><a onclick="navigateTo('services')">Our Services</a></li>
+              <li><a onclick="navigateTo('contact')">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <div class="footer-contact-item">
+              <span>📞</span>
+              <a href="tel:6158397690">(615) 839-7690</a>
+            </div>
+            <div class="footer-contact-item">
+              <span>✉️</span>
+              <a href="mailto:miraclecare23@gmail.com"
+                >miraclecare23@gmail.com</a
+              >
+            </div>
+            <div class="footer-contact-item">
+              <span>📍</span>
+              <div>
+                5560 Franklin Pike Circle, Suite 209<br />
+                Brentwood, TN 37027
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service-areas">
+          <h4>Service Areas</h4>
+          <div class="counties-list">
+            <span>Davidson County</span>
+            <span>Rutherford County</span>
+            <span>Williamson County</span>
+            <span>Wilson County</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2025 Miracle Care Inc. All rights reserved. | Licensed Healthcare
+            Provider
+          </p>
+          <p>
+            Committed to providing quality care with compassion and dignity.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
